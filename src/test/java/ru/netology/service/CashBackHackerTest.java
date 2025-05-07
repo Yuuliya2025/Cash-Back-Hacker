@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CashBackHackerTest {
+public class CashBackHackerTest {
 
     @Test
-    void testRemainWhenAmountLessThanBoundary() {
+    public void testRemainWhenAmountLessThanBoundary() {
 
         CashBackHacker cashBackHacker = new CashBackHacker();
         int amount = 800;
@@ -19,7 +19,7 @@ class CashBackHackerTest {
     }
 
     @Test
-    void testRemainWhenAmountIsMultipleOfBoundary() {
+    public void testRemainWhenAmountIsMultipleOfBoundary() {
 
         CashBackHacker cashBackHacker = new CashBackHacker();
         int amount = 1000;
@@ -31,7 +31,7 @@ class CashBackHackerTest {
     }
 
     @Test
-    void testRemainWhenAmountGreaterThanBoundary() {
+    public void testRemainWhenAmountGreaterThanBoundary() {
 
         CashBackHacker cashBackHacker = new CashBackHacker();
         int amount = 1700;
