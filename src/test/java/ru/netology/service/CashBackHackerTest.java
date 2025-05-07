@@ -1,13 +1,11 @@
 package ru.netology.service;
+import org.testng.annotations.Test;
+import static org.testng.Assert.assertEquals;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-class CashBackHackerTest {
+public class CashBackHackerTest {
 
     @Test
-    void testRemainWhenAmountLessThanBoundary() {
+    public void testRemainWhenAmountLessThanBoundary() {
 
         CashBackHacker cashBackHacker = new CashBackHacker();
         int amount = 800;
@@ -15,11 +13,11 @@ class CashBackHackerTest {
 
         int actualResult = cashBackHacker.remain(amount);
 
-        assertEquals(expectedResult, actualResult);
+        assertEquals(actualResult, expectedResult);
     }
 
     @Test
-    void testRemainWhenAmountIsMultipleOfBoundary() {
+    public void testRemainWhenAmountIsMultipleOfBoundary() {
 
         CashBackHacker cashBackHacker = new CashBackHacker();
         int amount = 1000;
@@ -27,11 +25,11 @@ class CashBackHackerTest {
 
         int actualResult = cashBackHacker.remain(amount);
 
-        assertEquals(expectedResult, actualResult);
+        assertEquals(actualResult, expectedResult);
     }
 
     @Test
-    void testRemainWhenAmountGreaterThanBoundary() {
+    public void testRemainWhenAmountGreaterThanBoundary() {
 
         CashBackHacker cashBackHacker = new CashBackHacker();
         int amount = 1700;
@@ -39,6 +37,6 @@ class CashBackHackerTest {
 
         int actualResult = cashBackHacker.remain(amount);
 
-        assertEquals(expectedResult, actualResult);
+        assertEquals(actualResult, expectedResult);
     }
 }
